@@ -1,0 +1,23 @@
+import 'package:flutter/material.dart';
+class HomePage extends StatefulWidget {
+  const HomePage({super.key});
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  final speechToText = SpeechToText();
+  final flutterTts = FlutterTts();
+  String lastWords = "";
+  final OpenAIService openAIService = openAIService();
+
+
+
+
+
+  @override
+  Widget build(BuildContext context) {
+    return  Scaffold();
+  }
+}
